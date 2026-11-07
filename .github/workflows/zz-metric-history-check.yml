@@ -11,4 +11,4 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -e . pytest pytest-timeout && pip install -r requirements/test-requirements.txt || true
-      - run: pytest tests/server/test_handlers.py -k "metric_history" -p no:cacheprovider -q
+      - run: pytest tests/server/test_handlers.py -p no:cacheprovider -q
